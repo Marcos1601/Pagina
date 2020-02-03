@@ -10,6 +10,10 @@ body {
 	font-family: "Century Gothic"
 }
 
+header	{
+	width: 100%;
+}
+
 a	{
 	text-decoration: none;
 }
@@ -26,7 +30,7 @@ img	{
 .title {
 	width: 100%;
 	background: #3FAF59;
-	height: 200px;
+	height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,6 +48,10 @@ img	{
 	background: #1C1C1C;
 	display: flex;
 	justify-content: center;
+}
+
+.navegacion ul{
+	list-style: none;
 }
 
 .menu	{
@@ -135,3 +143,47 @@ img	{
   background-position: center;
 }
 
+.menu > ul {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > ul  > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu ul a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+
+
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
