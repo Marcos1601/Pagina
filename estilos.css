@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: "Century Gothic"
+	font-family: "Century Gothic";
 }
 
 header	{
@@ -30,7 +30,7 @@ img	{
 .title {
 	width: 100%;
 	background: #3FAF59;
-	height: 150px;
+	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,8 +38,8 @@ img	{
 
 .title h1	{
 	color: #fff;
-	font-size: 34px;
-	font-weight: 200;
+	font-size: 44px;
+	font-weight: 50;
 	text-align: center;
 }
 
@@ -164,26 +164,3 @@ img	{
 
 
 
-/* Submenu*/
-
-.submenu{
-	position: absolute;
-	background: #333333;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-}
-
-.submenu li a{
-	display: block;
-	padding: 15px;
-	color: #fff;
-	font-family: 'Open sans';
-	text-decoration: none;
-}
-
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}
